@@ -1,0 +1,30 @@
+<project name="copy" default="copy2" basedir=".">
+<target name="copy1">
+	<mkdir dir="loke"/>
+<copy todir="./loke">
+	<fileset dir="D:\moulee">
+		<include name="**/*.txt"/>
+		</fileset>
+</copy>
+</target>
+<target name="copy2" >
+	<copy todir="./output" flatten="true">
+	<fileset dir="D:\">
+		<include name="**/*.txt"/>
+		<!--
+		<exclude name="**/moulee/**"/>
+		<exclude name="**/loke/**"/>
+		<exclude name="**/gig/**"/>
+	-->
+
+	</fileset>
+</copy>
+	</target>
+
+<target name="delete">
+	<delete includeEmptyDirs="true">
+		<fileset dir="D:\moulee\output" includes="**">
+		</fileset>
+	</delete>
+</target>
+</project>
