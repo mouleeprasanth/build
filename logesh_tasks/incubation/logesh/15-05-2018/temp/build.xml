@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<project name="task" default="a">
+
+<target name="a">
+	 <taskdef resource="net/sf/antcontrib/antcontrib.properties"></taskdef>
+	<for list = "1 2 3 4 5 6 7 8 9 10" param="num">
+	
+<sequential> 
+		
+		
+		<path>
+	
+	<fileset property="file" dir="./tom/*.txt"></fileset>
+	</path>
+		
+	if[ @num %2==0] then
+	<move file= "$file" todir= "./even"/>
+	else
+	<move file="$file" todir="./odd"/>
+		
+		
+	</sequential>
+	
+	
+		</for>
+	
+	</target>
+	
+	<target name="log">
+	
+	<javac destdir="./" basedir="./src/">
+		
+		<include name="**/*.java"/>
+		
+		
+		</javac>
+		
+		
+		<jar destfile="ant.jar" srcdir="./src">
+		
+		<include name="**/*.class"/>
+		
+		</jar>
+		
+		<delete dir="." file="ant.jar">
+		
+		<path>
+			
+			
+			<pathelement file="./path1/Stars"/>
+			
+			<pathelement file="./path2/Addnumbers"/>
+						 
+			
+			</path>
+		
+		</delete>
+	
+	
+	
+	</target>
+
+
+
+</project>

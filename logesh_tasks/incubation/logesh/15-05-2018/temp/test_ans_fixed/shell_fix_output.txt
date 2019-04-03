@@ -1,0 +1,21 @@
+input 1: ./shell_fix.sh zoho corp
+
+line count in the text file kill.txt
+47
+meta
+38:meta
+2
+zoho
+corp
+
+
+input 2:./shell_fix.sh
+
+output:
+
+line count in the text file kill.txt
+47
+meta
+38:meta
+0
+please enter greater than 1 commandline arguments

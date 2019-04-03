@@ -1,0 +1,44 @@
+TOMCAT:
+
+
+Build Creation:
+
+1) Create a directory named as TOMCAT
+
+2) Download the following zips using ant parallel task
+
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.zip
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.exe
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.zip
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.exe
+    
+
+3) Move the zips into zips_parallel directory (which should be present inside TOMCAT directory).
+
+
+4) Download the following zips using ant for task
+
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.zip
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.tar.gz
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.exe
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.zip
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz
+    http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.exe
+
+5) Move the zips into zips_for directory (which should be present inside TOMCAT directory).
+
+6) Run the commmand "ls" using ant exec task. It should be list the files which is inside the TOMCAT directory.
+
+7) Output of the ls command should be stored in ls.txt
+
+8) Create a directory named as output (which should be present inside TOMCAT directory)
+
+9) Move the ls.txt into output.
+
+10) Make a zip as  TOMCAT (excluding output) directory in the name of tomcat_binaries.zip.
+
+
+11) Move the tomcat_binaries.zip into the output directory.
+

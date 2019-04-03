@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project name="log" default="sec">
+<target name="go">
+    </target >
+    <target name="sec" depends="go">
+    
+        <mkdir dir="TOMCAT"/>
+        <get src="http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.zip" dest="."/>
+        <rename src="apache-tomcat-9.0.8.zip" dest="tomcat9.zip"/>
+        
+         <mkdir dir="zips"/>
+        
+        <move todir="C:\Users\Administrator\Desktop\test\TOMCAT">
+        <fileset dir="C:\Users\Administrator\Desktop\test\zips"/>
+        </move>
+        
+        <move file="tomcat9.zip" todir="C:\Users\Administrator\Desktop\test\TOMCAT\zips"/>
+        
+        <unzip src="C:\Users\Administrator\Desktop\test\TOMCAT\zips\tomcat9.zip" dest="C:\Users\Administrator\Desktop\test\TOMCAT"/>
+        <delete dir="C:\Users\Administrator\Desktop\test\TOMCAT\apache-tomcat-9.0.8/webapps/examples/jsp/jsp2/misc"/>
+        
+        <get src="http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/src/apache-tomcat-9.0.8-src.zip" dest="."/>
+        
+         <rename src="apache-tomcat-9.0.8-src.zip" dest="tomcat9_src.zip"/>
+        
+         <move file="tomcat9_src.zip" todir="C:\Users\Administrator\Desktop\test\TOMCAT\zips"/>
+        
+         <unzip src="C:\Users\Administrator\Desktop\test\TOMCAT\zips\tomcat9_src.zip" dest="C:\Users\Administrator\Desktop\test\TOMCAT"/>
+        
+         <!-- compile-->
+         <property name = "src.dir" value = "C:\Users\Administrator\Desktop\test\src"/>
+         <property name = "build.dir" value = "C:\Users\Administrator\Desktop\test\classes"/>
+        
+       <property name = "build_tom.dir" value = "C:\Users\Administrator\Desktop\test"/>
+    
+      <mkdir dir = "${build.dir}"/>
+      
+      <javac srcdir="${src.dir}" destdir = "${build.dir}"  includes="**/*.java" source = "1.8" target = "1.8"  />
+    
+     
+        <jar destfile="${build_tom.dir}/tomcat9_src.jar" basedir="${build.dir}"/>
+     
+        <copy file="tomcat9_src.jar" todir="C:\Users\Administrator\Desktop\test\TOMCAT\apache-tomcat-9.0.8\lib"/>
+        
+        <zip destfile="${build_tom.dir}/apache-tomcat-9.0.8_new.zip"
+     basedir="C:\Users\Administrator\Desktop\test\TOMCAT\apache-tomcat-9.0.8"/>
+        
+        <mkdir dir = "${build_tom.dir}/TOMCAT/output"/>
+        
+        <move file="${build_tom.dir}/apache-tomcat-9.0.8_new.zip" todir="${build_tom.dir}/TOMCAT/output"/>
+        
+        
+        
+    </target>
+    
+    
+
+
+</project>

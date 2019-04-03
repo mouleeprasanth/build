@@ -1,0 +1,17 @@
+<?xml version = "1.0"?>
+<project name = "Hello world" default = "go">
+   <property name = "inc" value = "Zoho"/>
+  
+   <target name = "go">
+<!--copy files from one dir to another-->
+<copy todir="C:\Users\Administrator\Desktop">
+  <fileset dir="C:\Users\Administrator\Desktop\log">
+    <include name = "**/*.txt"/>
+    <exclude name="**/*.java">
+    </exclude>
+    </fileset>
+</copy>
+      <echo> You are at ${inc} </echo>
+      <echo>${basedir}</echo>
+   </target>
+</project>

@@ -1,0 +1,47 @@
+09-05-2018
+11-05-18
+7zFM - Shortcut.lnk
+AddNumbers.clas
+Arguments.class
+Google Chrome.lnk
+NOTES
+NOTES.txt
+New folder
+README
+TOMCAT
+ant-contrib-0.3.jar
+ant.jar
+ant.zip
+antjars
+antlib.html
+apache-tomcat-9.0.8.zip
+build.xml
+classes
+cmde.xml
+conw.xml
+day3
+desktop.ini
+dir.txt
+exec.xml
+f
+flow.xml
+jar.xml
+jarc.xml
+jars
+kill.txt
+log.file
+log.txt
+logesh
+logesh.txt
+loo
+mercurial-4.5.3.win-amd64-py2.7.msi
+meta
+my-script.sh
+my.sh
+out.txt
+second task
+shell
+task day 3
+tasks
+text.jar
+tomcat9_src.zip

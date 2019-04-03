@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+<project name = "get" default = "go">
+   <target name="go">
+       <!-- get and store datas/-->
+       <get src="https://www.zoho.com/" dest="data.html"/>
+
+        <echo>logesh</echo>
+       </target>
+</project>

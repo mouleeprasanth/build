@@ -1,0 +1,7 @@
+<?xml version = "1.0"?>
+<project name = "Hello world" default = "go">
+   <target name="go">
+       <!-- Run this to rename the file -->
+<move file="newfile.txt" tofile="new.txt"/>
+       </target>
+</project>

@@ -1,0 +1,42 @@
+TOMCAT:
+
+
+Build Creation:
+
+1) Create a directory named as TOMCAT
+
+2) Download the zip http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomcat-9.0.8.zip
+
+3) Rename the zip as tomcat9.zip
+
+4) Move the zip into zips directory (which should be present inside TOMCAT directory).
+
+5) Extract the zip into TOMCAT directory
+
+6) Remove the following directory from the extracted directory.
+
+    * apache-tomcat-9.0.8/webapps/examples/jsp/jsp2/misc
+
+7) Download the zip http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.8/src/apache-tomcat-9.0.8-src.zip
+
+8) Rename the zip as tomcat9_src.zip
+
+9) Move the zip into zips directory (which should be present inside TOMCAT directory).
+
+10) Extract the zip into TOMCAT directory
+
+
+11) Create your own java files (Some 5 files have 2 different packages) and compile those files.
+
+12) Compiled classes should be in the directory name of classes in your current working directory.
+
+13) Make a JAR in the name of tomcat9_src.jar.
+
+14) Copy the created tomcat9_src.jar into apache-tomcat-9.0.8/lib (First zip extracted directory path).
+
+15) Make a zip as  apache-tomcat-9.0.8 directory in the name of apache-tomcat-9.0.8_new.zip
+
+16) Create a directory named as output (which should be present inside TOMCAT directory)
+
+17) Move the apache-tomcat-9.0.8_new.zip into the output directory.
+

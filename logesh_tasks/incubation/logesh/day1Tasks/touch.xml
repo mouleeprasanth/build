@@ -1,0 +1,7 @@
+<?xml version = "1.0"?>
+<project name = "tasks" default = "go">
+   <target name="go">
+       <!-- Run this to create a file -->
+<touch file="myfile"/>
+       </target>
+</project>

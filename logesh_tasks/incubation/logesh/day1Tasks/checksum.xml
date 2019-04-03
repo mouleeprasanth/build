@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+<project name = "checksum" default = "go">
+   <target name="go">
+       <!-- create md5 file/-->
+       <checksum file="myfile.txt"  />
+
+        <echo>logesh</echo>
+       </target>
+</project>

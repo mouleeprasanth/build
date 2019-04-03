@@ -1,0 +1,12 @@
+<?xml version = "1.0"?>
+<project name = "Hello world" default = "go">
+   <target name="go">
+<copy todir = "C:\Users\Administrator\Desktop\testing">
+   <fileset dir = "C:\Users\Administrator\Desktop\log" includes = "**/*.txt"/>
+   
+   <filterset>
+      <filter token = "VERSION" value = "${current.version}"/>
+   </filterset>
+</copy>
+       </target>
+</project>

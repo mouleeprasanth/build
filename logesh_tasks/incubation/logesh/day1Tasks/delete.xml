@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+<project name = "Delete" default = "go">
+   <target name="go">
+       <!-- To delete the particular file/-->
+<delete file="C:/Users/Administrator/Desktop/4.jpg"></delete>
+        <echo>logesh
+    </echo>
+       </target>
+</project>

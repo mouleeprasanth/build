@@ -1,0 +1,24 @@
+
+a:
+    [mkdir] Created dir: E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+    [mkdir] Created dir: E:\logesh\15-05-2018\temp\test_ans_fixed\even
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\even
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\even
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\even
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\even
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\odd
+     [move] Moving 1 file to E:\logesh\15-05-2018\temp\test_ans_fixed\even
+
+log:
+    [mkdir] Created dir: E:\logesh\15-05-2018\temp\test_ans_fixed\class
+    [javac] E:\logesh\15-05-2018\temp\test_ans_fixed\build_fix.xml:31: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 5 source files to E:\logesh\15-05-2018\temp\test_ans_fixed\class
+      [jar] Building jar: E:\logesh\15-05-2018\temp\test_ans_fixed\build.jar
+      [jar] Building jar: E:\logesh\15-05-2018\temp\test_ans_fixed\NewBuild.jar
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

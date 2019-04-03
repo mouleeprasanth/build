@@ -1,0 +1,9 @@
+
+a:
+
+BUILD FAILED
+C:\Users\Administrator\Documents\logesh\logesh\15-05-2018\temp\build.xml:7: class org.apache.tools.ant.taskdefs.MacroDef$NestedSequential doesn't support nested text data ("if[ @num...
+
+        else").
+
+Total time: 0 seconds

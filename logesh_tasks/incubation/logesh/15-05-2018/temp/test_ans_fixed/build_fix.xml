@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<project name="task" default="a">
+
+<target name="a">
+	<mkdir dir="odd"/>
+	<mkdir dir="even"/>
+	 <taskdef resource="net/sf/antcontrib/antcontrib.properties"></taskdef>
+  <for list = "1,2,3,4,5,6,7,8,9,10" param="ft" delimiter=",">
+         <sequential>
+			 <math result="res" operand1="@{ft}" operation="%" operand2="2" datatype="int"/>
+	<if>	
+ <equals arg1="${res}" arg2="0" />
+ <then>
+   <move file="./tom/@{ft}.txt" todir="./even"/>
+ </then>
+ <else>
+   
+	 <move file="./tom/@{ft}.txt" todir="./odd"/>
+ </else>
+</if>
+        </sequential>
+        
+        </for>
+	<antcall target="log"/>
+	</target>
+	
+	<target name="log">
+	
+	<mkdir dir="class"/>
+	<javac destdir="./class" srcdir="./src">
+		
+		<include name="**/*.java"/>
+		
+		
+		</javac>
+		
+		
+		<jar destfile="build.jar" basedir="./class/src">
+		
+		<include name="**/*.class"/>
+		
+		</jar>
+		
+		<jar destfile="NewBuild.jar">
+    <zipfileset src="build.jar" excludes="pack1/ pack2/"/>
+</jar>
+			
+
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	</target>
+
+
+
+</project>

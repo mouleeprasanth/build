@@ -1,0 +1,7 @@
+<?xml version = "1.0"?>
+<project name = "Hello world" default = "go">
+   <target name = "go">
+       <!-- Create a Directory-->
+<mkdir dir="zoho"/>
+   </target>
+</project>
